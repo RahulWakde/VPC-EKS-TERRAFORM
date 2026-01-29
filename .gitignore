@@ -1,0 +1,21 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS credentials
+*.pem
+*.key
+.aws/
+
+# Kubernetes
+.kube/
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
