@@ -20,3 +20,14 @@ This Terraform configuration provisions:
 - Terraform
 - AWS CLI v2
 - kubectl
+- 
+#Folder Breakdown
+
+- ConfigurationFiles/
+ Kubernetes manifests for deploying workloads (Deployment & Service).
+
+- eks-module/
+ Reusable Terraform module that creates the VPC, networking, IAM roles, EKS cluster, and node groups.
+
+- Root files (main.tf, provider.tf, variables.tf)
+ Used to configure providers, define variables, and call the EKS module.
