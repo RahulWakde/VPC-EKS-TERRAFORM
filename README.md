@@ -1,20 +1,17 @@
 # VPC-EKS-TERRAFORM-NGNIX
-EKS Cluster on AWS Using Terraform
+# Deploying an Amazon EKS Cluster Using Terraform
 
-In this project, I’ve built an Amazon EKS cluster using Terraform, following infrastructure-as-code principles and AWS best practices.
-The goal of this setup is to create a reproducible, clean, and production-ready Kubernetes environment without relying on manual AWS Console steps.
+This project uses Terraform to provision an Amazon EKS cluster on AWS following Infrastructure as Code best practices, with a sample NGINX workload to validate the setup.
 # Architecture Overview
 
-This Terraform configuration provisions:
+The infrastructure created by this project includes:
 
-- A custom VPC
-- Public and private subnets
-- Internet Gateway
-- NAT Gateway
-- EKS control plane
-- Managed node groups
-- Required IAM roles and security groups
-
+- A VPC spanning multiple Availability Zones
+- Public subnets for load balancers
+- Private subnets for worker nodes
+- EKS control plane managed by AWS
+- EC2 worker nodes managed via EKS Node Groups
+- 
 #Prerequisites
 
 - Terraform
