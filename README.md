@@ -1,4 +1,4 @@
-# VPC-EKS-TERRAFORM-NGNIX
+# VPC-EKS-TERRAFORM-NGINX
 # Deploying an Amazon EKS Cluster Using Terraform
 
 This project uses Terraform to provision an Amazon EKS cluster on AWS following Infrastructure as Code best practices, with a sample NGINX workload to validate the setup.
